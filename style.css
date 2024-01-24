@@ -51,8 +51,9 @@ h1 {
 }
 
 .description {
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem;
   color: var(--desaturated-blue);
+  font-size: 0.9rem;
 }
 
 .plan {
@@ -72,6 +73,10 @@ h1 {
 
 .item1 {
   grid-area: icono;
+  justify-self: center;
+  align-self: center;
+  margin: 0;
+  height: 3rem;
 }
 .item2 {
   grid-area: textA;

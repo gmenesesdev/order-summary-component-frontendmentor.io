@@ -29,6 +29,7 @@ body {
   background-image: url("images/pattern-background-mobile.svg");
   background-color: var(--pale-blue);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -57,6 +58,7 @@ h1 {
 }
 
 .plan {
+  width: auto;
   margin: 1rem 2rem;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -66,6 +68,7 @@ h1 {
   grid-template-areas: 
   "icono textA change"
   "icono textB change";
+  justify-content: center;
   justify-items: center;
   align-items: center;
   background-color: var(--very-pale-blue);
@@ -91,6 +94,9 @@ h1 {
 }
 .item4 {
   grid-area: change;
+  justify-self: end;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .pay-text {
@@ -98,16 +104,27 @@ h1 {
 }
 
 button {
-  width: 80%;
-  margin: 0 2rem;
+  width: auto;
+  margin: 0;
   background-color: var(--bright-blue);
   color: white;
   font-weight: 700;
   border-radius: 0.5rem;
   border-style: none;
-  padding: 0.8rem;
+  padding: 0.8rem 6rem;
+  box-shadow: 0px 20px 10px -5px rgba(0,0,0,0.1);
 }
 
+.cancel {
+  margin: 2rem;
+}
+
+.cancel a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--desaturated-blue);
+}
 @media (min-width: 376px) {
   body {
     background-image: url("images/pattern-background-desktop.svg");
